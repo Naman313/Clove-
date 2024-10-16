@@ -1,14 +1,6 @@
-/* utilis */
+
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
-/* google fonts */
-
-/* 
-font-family: "Poppins", sans-serif;
-font-family: "Roboto", sans-serif;
-*/
-
-/* css variable */
 :root {
   --bg1: #fff0e7;
   --bg2: #f8953e;
@@ -16,7 +8,6 @@ font-family: "Roboto", sans-serif;
   --txt1: rgb(253, 251, 250);
 }
 
-/* to start default page margin , padding to 0 */
 * {
   margin: 0;
   padding: 0;
@@ -43,27 +34,20 @@ font-family: "Roboto", sans-serif;
   color: var(--bg2);
 }
 
-/* container */
+
 .container {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
-/* homepage********* */
 
-/* navbar */
-
-/* .navbar {
-  position: sticky;
-} */
 
 .menuWrapper {
   display: flex;
-  /* using flexbox to make styling easy everything in a box and properties like space around , align items to center*/
+  
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.1vmax;
-  /* for dynamic fontSize */
   background-color: var(--bg1);
   position: relative;
   padding: 20px;
@@ -103,28 +87,19 @@ font-family: "Roboto", sans-serif;
   color: brown;
 }
 
-/* #navlinks p:hover {
-  border-bottom: 3px solid var(--bg2);
-} */
+
 
 .submenu {
-  position: relative;
-  /* position: absolute; */
-  /* top: 150%; */
-  /* left: 50%; */
-  /* width: 80%; */
+ position: relative;
   z-index: 1;
   background: #b63535;
-  /* transform: translateX(-50%); */
   display: none;
 }
 
 .services-container {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  /* flex-wrap: wrap; */
   width: 1000px;
   gap: 20px;
   justify-content: space-between;
@@ -141,17 +116,14 @@ font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-
   justify-content: space-between;
   align-items: center;
-  /* width: calc(33% - 20px); */
   box-sizing: border-box;
   color: black;
 }
 
 .service .arrow {
-  color: #f28c38;
+  color: #f30000;
 }
 
 .service .arrow:hover {
@@ -166,7 +138,7 @@ font-family: "Roboto", sans-serif;
   background-color: #f28c38;
   color: #ffffff;
   text-align: center;
-  /* width: 100%; */
+
   border: none;
   border-radius: 25px;
 }
@@ -222,7 +194,6 @@ font-family: "Roboto", sans-serif;
 .overlay {
   width: 80vw;
   height: 50vh;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   position: fixed;
   display: flex;
   justify-content: center;
@@ -235,33 +206,34 @@ font-family: "Roboto", sans-serif;
 .modal1 {
   width: 80%;
   height: 60%;
-  /* z-index: 1001; */
-  /* Ensure the modal is above the overlay */
   background: #fff;
   padding: 20px;
-  /* Add padding for better appearance */
   border-radius: 10px;
 }
 
-/* hero section of home page */
+
 .hero-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* z-index: 1; */
   width: 100vw;
   margin: 0 auto;
 }
 
 .carousel-container {
   width: 100vw;
-  /* z-index: 1; */
 }
 
 .carousel {
   display: flex;
   transition: transform 1s ease;
-  animation: marquee 10s linear infinite;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+    cursor: pointer;
+ 
+    scroll-snap-type: x mandatory;
   
 }
 
@@ -318,14 +290,7 @@ font-family: "Roboto", sans-serif;
   background-color: #e07b2d;
 }
 
-/* .hero-content {
-  bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18px;
-  flex: 1;
-} */
+
 
 .buy-now-btn {
   display: inline-block;
@@ -344,15 +309,12 @@ font-family: "Roboto", sans-serif;
 }
 
 .hero-image {
-  /* object-fit: contain; */
   width: 100%;
   height: 100%;
-  /* background: green; */
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
 }
 
 .hero-image img {
@@ -360,15 +322,14 @@ font-family: "Roboto", sans-serif;
   max-width: 65%;
 }
 
-/* User Base */
 
 .User-base {
-  /* height: 20vh; */
+
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 30px;
-  /* padding: 10px; */
+
 }
 
 .section-content {
@@ -404,9 +365,9 @@ font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
-/* location */
+
 .locate {
-  /* max-width: 40%; */
+
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -823,7 +784,7 @@ font-family: "Roboto", sans-serif;
   max-width: 80vw;
   margin: 20px auto;
   overflow-x: scroll;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   white-space: nowrap;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
